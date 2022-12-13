@@ -1,0 +1,198 @@
+/* font google */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --logo-color: linear-gradient(to right,#259545 50%,#18c549);
+    --color-primary:#f7f7f7e7;
+    --color-secondary:#259545;
+    --color-tertiary:#000000;
+    --color-white:#ffffff;
+    --color-strong:#de1515;
+    --color-btn:#22ab49;
+    --color-btn-hover: #1abe49;
+    --bg-sobre-nos:#ccf4e674;
+    --font: 'Space Grotesk', Arial, Helvetica, sans-serif;
+}
+/* genéricos */
+button {
+    padding: 9px 17px;
+    font-family: var(--font);
+    font-size: 16.5px;
+    background-color: var(--color-btn-hover);
+    color: var(--color-white);
+    text-align: center;
+}
+.btn-primary {
+    transition: 0.4s;
+    border: none;
+    border-radius: 15px;
+
+}
+.btn-primary:hover {
+    border: 1px solid var(--color-primary);
+    border-radius: 16px;
+    background-color: var(--color-btn);
+}
+.btn-hero {
+    transition: 0.3s;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    background-color: var(--color-btn);
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+}
+.btn-hero:hover {
+    background-color: var(--color-btn-hover);
+}
+.container {
+    padding: 0 70px 0 70px;
+}
+body {
+    font-family: var(--font);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px 25px 80px;
+    background-color: var(--color-primary);
+}
+header .logo {
+    letter-spacing: 1.5px;
+    background-image: var(--logo-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+header > .logo-header::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-image: var(--logo-color);
+    border-radius: 0 0 4rem 4rem;
+}
+header nav > ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+header nav > ul > li {
+    font-size: 16.5px;
+}
+/* main */
+section.hero {
+    display: flex;
+    background-color: var(--color-primary); 
+    margin-bottom: 4.5rem;
+    padding-bottom: 60px;
+}
+.hero-text {
+    padding: 150px 0 0 0;
+    margin-right: 15px;
+}
+.hero-text > h1{
+   font-size: 45px;
+   letter-spacing: 0.6px;
+   line-height: 49px;
+   margin-bottom: 20px;
+}
+.hero-text > h1 > strong {
+    color: var(--color-strong);
+}
+.hero-text > p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}  
+.hero-image {
+    padding-top: 50px;
+    margin-left: 10px;
+}
+.hero-image > img {
+    max-width: 900px;
+    min-width: 590px;  
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 50px;
+}
+/* services */
+section.services {
+    
+}
+.services-title > .title-service {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+}
+.services-title > .subtitle-service {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.cards-services {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 28px;
+    column-gap: 24px;
+    margin-top: 60px;
+}
+.cards-services > .card {
+    height: auto;
+    width: 385px;
+    border: 1px solid rgb(234, 232, 232);
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    padding: 25px;
+}
+.card > h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+
+}
+.card > p {
+    text-align: justify;
+}
+/* aside */
+aside.sobre-nos {
+    margin-top: 7rem;
+    background-color: var(--bg-sobre-nos);
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+.image-sobre-nos {
+    padding-right: 20px;
+}
+.image-sobre-nos > img {
+    width: 700px;
+    height: 410px;
+    border-radius: 10px;
+}
+.text-sobre-nos {
+    margin-left: 20px;
+   
+}
+.text-sobre-nos > h1 {
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    margin-bottom: 15px;
+}
+.text-sobre-nos > p {
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 23px;
+}
+/* depoimentos */
+aside.depoimentos > .cards-depoimentos{
+
+}
+.card-depoimento {
+    width: 385px;
+    border: 1px solid black;
+}
