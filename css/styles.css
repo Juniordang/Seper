@@ -63,7 +63,7 @@ header {
     padding: 15px 50px 25px 80px;
     background-color: var(--color-primary);
 }
-header .logo {
+.logo {
     letter-spacing: 1.5px;
     background-image: var(--logo-color);
     background-clip: text;
@@ -165,6 +165,7 @@ aside.sobre-nos {
     align-items: center;
     padding-top: 80px;
     padding-bottom: 70px;
+    margin-bottom: 100px;
 }
 .image-sobre-nos {
     padding-right: 20px;
@@ -189,10 +190,49 @@ aside.sobre-nos {
     line-height: 23px;
 }
 /* depoimentos */
+aside.depoimentos {
+    margin-bottom: 120px;
+}
 aside.depoimentos > .cards-depoimentos{
-
+    display: flex;
+    gap: 50px;
+}
+.title-depoimento > h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
 }
 .card-depoimento {
-    width: 385px;
-    border: 1px solid black;
+    width: 450px;
+    height: auto;
+    border: 1px solid rgb(234, 232, 232);
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    padding: 20px 30px;
+    
+}
+.card-depoimento > .avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.card-depoimento > .message > p {
+   text-align: justify;
+   font-style: italic;
+
+}
+footer.footer {
+    background-color:#69B99D;
+    height: auto;
+    padding: 50px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#text-footer > p {
+    margin: 10px 0 10px 0;
+}
+#icons > svg {
+    margin-right: 10px;
 }
