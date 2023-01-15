@@ -64,7 +64,7 @@ header {
     background-color: var(--color-primary);
 }
 .logo {
-    letter-spacing: 1.5px;
+    letter-spacing: 4px;
     background-image: var(--logo-color);
     background-clip: text;
     -webkit-background-clip: text;
